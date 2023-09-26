@@ -4,10 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truyện Cổ Tích</title>
+
+    <style>
+        /* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-while {
+    color: #fff !important;
+}
+
+.header {
+    position: fixed;
+    height: 46.5px;
+    background-color: dodgerblue;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+.nav > li > a {
+    color: #fff;
+}
+.nav li a {
+    
+    list-style: none;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+
+.nav > li:hover > a {
+    color: #000000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* di vào hiện ra */
+.nav li:hover .subnav {
+    display: block;
+}
+
+
+.subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+.subnav li {
+    width: 100%;
+}
+.nav .subnav a {
+    color: #000000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.nav .subnav li:hover {
+    color: #000000;
+    background-color: #ccc;
+}
+
+
+.header__bot {
+    background-color: aqua;
+}
+.logo{
+    max-width: 300px ;
+    height: 52px ;
+    padding:6px ;
+    cursor:pointer;
+    display: block;
+    float: left;
+    
+}
+    </style>
+
+
 </head>
 <body>
-    <div>
-        <p>shhdsadhahd</p>
+<div class="header">
+      <div  class="header__top">
+            <img class="logo" src="./img/logo.png" alt="">
+        <ul class="nav">
+          
+          <li >
+            <a href="">
+              Danh Sách 
+              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="">Truyện mới</a></li>
+              <li><a href="">Truyện hot</a></li>
+              <li><a href="">truyện full</a></li>
+
+            </ul>
+          <li><a href="">Thể Loại</a></li>
+          <li><a href="">Tuỳ Chỉnh</a></li>
+      </div>
     </div>
 </body>
 </html>
