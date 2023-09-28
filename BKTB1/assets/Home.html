@@ -29,9 +29,15 @@ html {
     right: 0;
     z-index: 1;
 }
+.header__top{
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav li {
     display: inline-block;
     position: relative;
+    
 }
 .nav > li > a {
     color: #fff;
@@ -83,13 +89,49 @@ html {
     background-color: aqua;
 }
 .logo{
-    max-width: 300px ;
     height: 52px ;
     padding:6px ;
     cursor:pointer;
-    display: block;
-    float: left;
     
+    
+}
+.nav-search-box{
+    padding-left: 50px;
+}
+.slider{
+
+
+    padding-top: 100px;
+}
+
+.text-title{
+   background-color: #f15f61;
+   color: #fff;
+   font-size: 10px;
+   width: 150px;
+   padding: 5px 20px;
+   border-radius: 5px;
+}
+.truyenthuyet{
+    padding: 0 20px;
+    display: flex;
+}
+.photo{
+    padding: 10px 0;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 15px 0 0;
+
+}
+.anh{
+    max-width: 350px;
+    height: auto;
+}
+.the_p{
+    font-size: 14px;
+}
+.the_h4{
+    padding: 7px 0;
 }
     </style>
 
@@ -97,10 +139,14 @@ html {
 </head>
 <body>
 <div class="header">
+    
       <div  class="header__top">
-            <img class="logo" src="./img/logo.png" alt="">
+        <img class="logo" src="./img/logo.png" alt="">
+
+        <div>
+            
+             
         <ul class="nav">
-          
           <li >
             <a href="">
               Danh Sách 
@@ -114,9 +160,85 @@ html {
               <li><a href="">truyện full</a></li>
 
             </ul>
-          <li><a href="">Thể Loại</a></li>
+          <li><a href="">Thể Loại</a>
+            <ul class="subnav">
+                <li><a href="">Truyền thuyết</a></li>
+                <li><a href="">Sự tích</a></li>
+                
+  
+              </ul>
+        </li>
           <li><a href="">Tuỳ Chỉnh</a></li>
+        </div>
+           
+
+
+          <div>
+            <ul class="nav">
+                <li>
+            <div class="nav-search-box " action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Tìm kiếm .." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+          </li>
+          <li><a href="">Đăng Ký </a></li>
+          <li><a href="">Đăng Nhập</a></li>
+            </ul>
+            
+
+          </div>
+          
+
+                
       </div>
+
+
+
+
+    </div>
+
+    </div>
+    <div class="slider">
+         <div class="text-title">
+            <h2>Truyền Thuyết</h2>
+            </div>
+        <div class="truyenthuyet">
+           
+        <div class="photo">
+            <img class="anh" src="./img/top-10-truyen-thuyet-viet-nam-hay-nhat-vo-cung-y-nghia-202210030706150483.jpg" alt="">
+            <h4 class="the_h4">Truyền Thuyết Thánh Gióng</h4>
+            <p class="the_p">Truyền thuyết về Thánh Gióng (Phù Đổng Thiên Vương) người anh hùng giúp dân cứu nước đánh đuổi giặc...
+        </p>
+        </div>
+        <div class="photo">
+            <img class="anh" src="./img/top-10-truyen-thuyet-viet-nam-hay-nhat-vo-cung-y-nghia-202210030705251684.jpg" alt="">
+            <h4 class="the_h4">Truyền Thuyết Sơn Tinh Thuỷ Tinh</h4>
+            <p class="the_p">Truyền thuyết về Thánh Gióng (Phù Đổng Thiên Vương) người anh hùng giúp dân cứu nước đánh đuổi giặc...
+        </p>
+        </div>
+        </div>
+
+<div class="text-title">
+
+            <h2>Sự tích</h2>
+            </div>
+        <div class="truyenthuyet">
+            
+        <div class="photo">
+            <img class="anh" src="./img/m_1813217674_cay-tre-tram-dot.jpg" alt="">
+            <h4 class="the_h4">Sự tích cây tre trăm đốt</h4>
+            <p class="the_p">Cây tre trăm đốt là một truyện cổ tích dân gian Việt Nam và là một phần của văn học truyền khẩu truyền thống Việt Nam. Đây được xem là một trong số những câu chuyện cổ tích nổi bật nhất.
+        </p>
+        </div>
+        <div class="photo">
+            <img class="anh" src="./img/top-10-truyen-thuyet-viet-nam-hay-nhat-vo-cung-y-nghia-202210030707117784.jpg" alt="">
+            <h4 class="the_h4">Sự tích bánh chưng bánh giầy</h4>
+            <p class="the_p">Cây tre trăm đốt là một truyện cổ tích dân gian Việt Nam và là một phần của văn học truyền khẩu truyền thống Việt Nam. Đây được xem là một trong số những câu chuyện cổ tích nổi bật nhất.
+        </p>
+        </div>
+        </div>
+        
+        
+
     </div>
 </body>
 </html>
