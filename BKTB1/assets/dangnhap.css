@@ -1,8 +1,15 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;
+     background-color: rgb(0, 0, 0);
+}
+* {
+  box-sizing: border-box;
+}
 /* dang nhap */
 #dangnhap {
-    
+    height: 500px ;
+    width: 500px ;
+    margin :0 auto;
+    margin-top: 160px ;
 }
 
 /* Full-width input fields */
@@ -64,6 +71,38 @@ button:hover {
   clear: both;
   display: table;
 }
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #09ec3a;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
